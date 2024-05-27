@@ -1,0 +1,89 @@
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start
+    position: relative;
+}
+
+.sideMenu {
+    width: 150px;
+    height: 1000px;
+    background-color: black;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.bg {
+    background-color: azure;
+    position: relative;
+}
+
+.video {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 1150px;
+}
+
+
+.role {
+    height: 1000px;
+    overflow-y: scroll;
+    align-items: 
+    position: absolute;
+}
+
+.bg2{
+    height: 1000px;
+    overflow-y: scroll;
+    align-items: flex-start
+    position: absolute;
+    Text-align:center
+}
+
+p{
+    font-size: 40px;
+    Text-align: left
+}
+h1{
+    font-size: 60px;
+}
+
+body {
+    margin: 0px;
+    position: fixed;
+   
+}
+
+nav {
+  a {
+    display: block;
+    color: #fff;
+    padding: 20px 50px; 
+    position: relative;
+    font-weight: 300;
+
+    .fas {
+      margin-right: -0.5em; //讓文字靠左對齊
+      transform: scale(0); //使圖示消失
+      transition: 0.3s;
+    }
+
+    &:hover .fas {
+      margin-right: 0em; //使文字回到原來的位置
+      transform: scale(1); //使圖示出現
+    }
+
+    & + a::before {  
+      content: "";
+      position: absolute;
+      border-top: 1px solid #ffffff;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+    }                     //分隔線設定 
+      
+  }
+}
