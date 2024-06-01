@@ -1,133 +1,117 @@
-.back {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: azure;
-}
-
-.bg {
-    flex: 1;
-    flex-shrink: 0;
-    height: 0;
-    width: 100%;
-    position: relative;
-   
-}
-
-.role {
-    width: 100%;
-    height: 100%;
-    overflow:auto;
-    align-items: flex-start
-    position: absolute;
-}
-
 p {
     font-size: 40px;
-    Text-align: left
-}
-h1 {
-    font-size: 60px;
+    text-align: left; /* 修正大小寫錯誤 */
 }
 
 body {
-    margin: 0px;
-    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    min-height: 100vh; /* 確保容器至少佔滿整個視窗高度 */
+    grid-template-areas:
+        "header"
+        "main"
+        "center"
+        "bottom"
+        "footer";   
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto 30vh;
+}
+
+.header {
+    grid-area: header;
+  
+}
+
+.header * {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    grid-area: main;
    
 }
 
-* {
-  box-sizing: border-box;
+.center {
+    grid-area: center;
+
 }
 
-ul {
-  list-style: none; 
-  padding-left: 0; 
+.bottom {
+    grid-area: bottom;
+  
 }
 
-a {
-  text-decoration: none;
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
 }
 
-/* NavBar */
-nav {
-  background: #eee;
-  box-shadow: 0px 1px 3px #00000088;
-  &::after {
-    content: "";
+p.text-end{
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                font-weight: bold;
+                position: relative;
+                top: 30px;
+            }
+            p.Contact{
+                font-size: 18px;
+                color: #fff;
+                font-weight: bold;
+                position: relative;
+                text-align: center;
+                top:50px;
+            }
+
+ul.menu {
+    list-style: none;
+    background-color: #333;
+    text-align: left;
+}
+
+ul.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.menu li a {
     display: block;
-    clear: both;
-  }
-}
-
-/* 隱藏 checkbox */
-input {
-  display: none;
-}
-
-/* 漢堡按鈕 */
-label {
-  float: left;
-  padding-left: 50px;
-  line-height: 50px;
-  cursor: pointer;
-}
-
-.img2{
-    width: 30px;   
-    vertical-align: middle;
-}
-
-/* menu*/
-.menu {
-  clear: both;
-  background: #fff;
-}
-
-li {
+    padding: 20px 25px;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
     text-align: center;
-    border-bottom: 1px solid #efefef;
 }
 
-a {
+ul.menu li ul.dropdown li {
     display: block;
-    line-height: 50px;
-    font-size: 18px;
-    color: #5d5d5d;
-    &:hover {
-        background: #5d5d5d;
-        color: #fff;
-    }
+    background-color: #333;
+    margin: 2px 0px;
 }
 
-/* 下拉選單效果 */
-.menu {
-  max-height: 0;
-  overflow: hidden;
-  transition: .2s; /* 動畫秒數 */
-}
-
-input:checked ~ .menu {
-  max-height: 300px;
-}
-
-/* mediaquery */
-@media screen and (min-width: 600px) {
-  label {
+ul.menu li ul.dropdown {
+    width: auto;
+    position: absolute;
+    background-color: #FFF;
+    z-index: 999;
     display: none;
-  }
-  .menu {
-    float: left;
-    clear: none;
-    max-height: 50px;
-    background: #eee;
-    li {
-      display: inline-block;
-      a {
-        padding: 0 15px;  
-      }
-    }
-  }
+}
+
+ul.menu li a:hover {
+    background-color: #222;
+}
+
+ul.menu li:hover ul.dropdown {
+    display: block;
 }
