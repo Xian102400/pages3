@@ -1,6 +1,5 @@
 p {
-    font-size: 40px;
-    text-align: left; /* 修正大小寫錯誤 */
+    text-align: justify;
 }
 
 body {
@@ -17,12 +16,12 @@ a {
     width: 100%;
     min-height: 100vh; /* 確保容器至少佔滿整個視窗高度 */
     grid-template-areas:
-        "header"
-        "main"
-        "center"
-        "bottom"
-        "footer";   
-    grid-template-columns: 1fr;
+        "header header header"
+        "main main main"
+        "left center right"
+        "left bottom right"
+        "footer footer footer";   
+    grid-template-columns: 15vw 70vw 15vw;
     grid-template-rows: auto 1fr auto auto 30vh;
 }
 
@@ -40,10 +39,14 @@ a {
     grid-area: main;
    
 }
-
+.left {
+    grid-area: left;
+}
+.right {
+    grid-area: right;
+}
 .center {
     grid-area: center;
-
 }
 
 .bottom {
@@ -114,4 +117,109 @@ ul.menu li a:hover {
 
 ul.menu li:hover ul.dropdown {
     display: block;
+}
+.abox{
+    width:600px;
+    height:400px;
+    background-color: antiquewhite;
+    background-image: url(pic/bm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+    color: red;
+    font-size: 30px;
+}
+.abox:hover{
+    background-image: url(pic/bmnow.jpg);
+}
+.bbox{
+    width:600px;
+    height:400px;
+    background-color: antiquewhite;
+    background-image: url(pic/gm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+    color: red;
+    font-size: 30px;
+}
+.bbox:hover{
+    background-image: url(pic/gmnow.jpg);
+}
+.cbox{
+    width:600px;
+    height:400px;
+    background-color: antiquewhite;
+    background-image: url(pic/b3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+    color: red;
+    font-size: 30px;
+}
+.cbox:hover{
+    background-image: url(pic/b3now.jpg);
+}
+.dbox{
+    width:600px;
+    height:400px;
+    background-color: antiquewhite;
+    background-image: url(pic/b1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+    color: red;
+    font-size: 30px;
+}
+.dbox:hover{
+    background-image: url(pic/b1now.jpg);
+}
+.ebox{
+    width:600px;
+    height:400px;
+    background-color: antiquewhite;
+    background-image: url(pic/b2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+    color: red;
+    font-size: 30px;
+}
+.ebox:hover{
+    background-image: url(pic/b2now.jpg);
+}
+.fbox{
+    width:600px;
+    height:400px;
+    background-color: antiquewhite;
+    background-image: url(pic/b4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+    color: red;
+    font-size: 30px;
+}
+.fbox:hover{
+    background-image: url(pic/b4now.jpg);
+}
+.gbox{
+    width:600px;
+    height:400px;
+    background-color: antiquewhite;
+    background-image: url(pic/g1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+    color: red;
+    font-size: 30px;
+}
+.gbox:hover{
+    background-image: url(pic/g1now.jpg);
 }
