@@ -128,7 +128,7 @@ ul.menu li:hover ul.dropdown {
     display: inline-block;
     margin: 5px;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 .abox:hover{
     background-image: url(pic/bmnow.jpg);
@@ -143,7 +143,7 @@ ul.menu li:hover ul.dropdown {
     display: inline-block;
     margin: 5px;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 .bbox:hover{
     background-image: url(pic/gmnow.jpg);
@@ -158,7 +158,7 @@ ul.menu li:hover ul.dropdown {
     display: inline-block;
     margin: 5px;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 .cbox:hover{
     background-image: url(pic/b3now.jpg);
@@ -173,7 +173,7 @@ ul.menu li:hover ul.dropdown {
     display: inline-block;
     margin: 5px;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 .dbox:hover{
     background-image: url(pic/b1now.jpg);
@@ -188,7 +188,7 @@ ul.menu li:hover ul.dropdown {
     display: inline-block;
     margin: 5px;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 .ebox:hover{
     background-image: url(pic/b2now.jpg);
@@ -203,7 +203,7 @@ ul.menu li:hover ul.dropdown {
     display: inline-block;
     margin: 5px;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 .fbox:hover{
     background-image: url(pic/b4now.jpg);
@@ -218,7 +218,7 @@ ul.menu li:hover ul.dropdown {
     display: inline-block;
     margin: 5px;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 .gbox:hover{
     background-image: url(pic/g1now.jpg);
